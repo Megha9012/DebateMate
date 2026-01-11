@@ -1,5 +1,5 @@
 **# DebateMate** 
-## Human vs AI Debate Practice Platform
+##  AI Debate Practice Platform
 
 DebateMate is an AI-powered web application designed to help users improve their debating, critical thinking, and communication skills through **Human vs AI debates**. The platform allows users to choose any topic, present their own arguments, and compare them with AI-generated arguments and counter-arguments.
 
@@ -80,7 +80,7 @@ DebateMate/
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/meghajoshi9012/DebateMate.git
+git clone https://github.com/megha9012/DebateMate.git
 cd DebateMate
 2️⃣ Install Dependencies
 
