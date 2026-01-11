@@ -1,209 +1,121 @@
-<<<<<<< HEAD
-#debatemate
+**# DebateMate** 
+## Human vs AI Debate Practice Platform
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kartik-labhshetwars-projects/v0-ai-debate-arena)
+DebateMate is an AI-powered web application designed to help users improve their debating, critical thinking, and communication skills through **Human vs AI debates**. The platform allows users to choose any topic, present their own arguments, and compare them with AI-generated arguments and counter-arguments.
 
-**Where AI models forge arguments and battle for intellectual supremacy.**
+This project focuses on bridging the gap between **human reasoning and artificial intelligence**, making it a powerful learning and practice tool for modern communication needs.
 
-DebateMate is a sophisticated web application that orchestrates live debates between different AI models. Watch as GPT-4, Claude, Llama, and other leading AI models engage in structured arguments on any topic you choose.
+---
 
-## DebateMate Demo
+## 🚀 Why DebateMate?
 
+In today’s competitive and professional environment, strong reasoning and communication skills are essential. DebateMate enables users to:
 
-https://github.com/user-attachments/assets/ee43bd26-f78c-4b89-b9e7-f3c1835ed32e
+- Practice structured thinking  
+- Improve logical reasoning  
+- Compare human arguments with AI responses  
+- Prepare for debates, interviews, and group discussions  
 
+The **Human vs AI debate concept** helps users understand different perspectives and sharpen their analytical skills.
 
-##  Features
+---
 
-### **Core Functionality**
-- **Live AI Debates**: Real-time arguments between different AI models
-- **Dynamic Model Selection**: Choose from 100+ AI models via OpenRouter API
-- **Intelligent Scoring**: Advanced algorithm analyzes logic, evidence, and persuasiveness
-- **Auto Mode**: Hands-off debates that run automatically
-- **Export Results**: Save debate transcripts as PDF or text files
+## ✨ Key Features
 
-### **Advanced Features**
-- **Smart Routing**: Automatic debate flow management with strategic prompting
-- **Real-time Analytics**: Live scoring and performance metrics
-- **Responsive Design**: Optimized for desktop, tablet, and mobile
-- **Keyboard Shortcuts**: Power user controls for efficient navigation
-- **Error Recovery**: Robust retry logic and graceful failure handling
+- 🤖 AI-powered argument generation  
+- 🧑 Human vs AI debate comparison  
+- 🔄 Arguments and counter-arguments on any topic  
+- 📚 Topic-based structured debate flow  
+- 🎨 Clean and responsive user interface  
+- 🔐 API key validation and management  
+- ⚡ Fast performance using modern web technologies  
 
-### **User Experience**
-- **Modern UI**: Clean, accessible interface built with Radix UI components
-- **Dark/Light Themes**: Automatic theme switching based on system preferences
-- **Animations**: Smooth transitions and victory celebrations with confetti
-- **Loading States**: Comprehensive feedback during AI generation
-- **Mobile-First**: Fully responsive design that works everywhere
+---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-### **Frontend**
-- **Next.js 15** - React framework with App Router
-- **React 19** - Latest React with concurrent features
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first styling
-- **Radix UI** - Accessible component primitives
+### Frontend
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
 
-### **Backend**
-- **Next.js API Routes** - Serverless API endpoints
-- **OpenRouter API** - Access to 100+ AI models
-- **Edge Runtime** - Fast, global API responses
+### Backend
+- Next.js API Routes
+- AI Model API Integration
 
-### **Architecture**
-- **Component-Driven** - Modular, reusable UI components
-- **Custom Hooks** - Shared state management logic
-- **Type Safety** - Full TypeScript coverage
-- **Error Boundaries** - Graceful error handling
+### Tools
+- Node.js
+- NPM
+- Git & GitHub
 
-## Quick Start
+---
 
-### Prerequisites
-- Node.js 18+ 
-- pnpm (recommended) or npm
-- OpenRouter API key ([Get one here](https://openrouter.ai/keys))
+## 📂 Project Structure
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/DebateMate.git
-   cd DebateMate
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   pnpm dev
-   ```
-
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-### Usage
-
-1. **Enter your OpenRouter API key** - Required for accessing AI models
-2. **Choose a debate topic** - Select from suggestions or enter your own
-3. **Select AI models** - Pick two models to debate (Pro vs Con positions)
-4. **Watch the debate unfold** - Enable auto mode or control manually
-5. **Analyze results** - View scores, export transcripts, and celebrate winners
-
-## Architecture
-
-### Project Structure
-```
 DebateMate/
-├── app/                    # Next.js App Router
-│   ├── api/               # API routes
-│   │   ├── debate/        # Debate generation endpoint
-│   │   ├── models/        # Dynamic model fetching
-│   │   └── validate-key/  # API key validation
-│   ├── debate/            # Debate page
-│   └── layout.tsx         # Root layout
-├── components/            # React components
-│   ├── ui/               # Base UI components (Radix)
-│   ├── debate-arena.tsx  # Main orchestrator
-│   ├── debate-setup.tsx  # Model selection
-│   └── debate-display.tsx # Live debate interface
-├── hooks/                # Custom React hooks
-│   ├── use-api-key.ts   # API key management
-│   └── use-models.ts    # Dynamic model loading
-├── lib/                  # Core business logic
-│   ├── debate-engine.ts # Debate orchestration
-│   ├── openrouter.ts   # API client
-│   └── scoring-engine.ts # Intelligent scoring
-└── types/               # TypeScript definitions
-    └── debate.ts        # Core types
-```
+│── app/
+│ ├── api/
+│ │ ├── debate/
+│ │ ├── models/
+│ │ └── validate-key/
+│ ├── debate/
+│ ├── layout.tsx
+│ └── page.tsx
+│
+│── components/
+│ ├── hero-section.tsx
+│ ├── footer.tsx
+│ ├── api-key-manager.tsx
+│ └── landing-footer.tsx
+│
+│── public/
+│── styles/
+│── package.json
+│── README.md
 
-### Key Components
 
-#### **DebateEngine** (`lib/debate-engine.ts`)
-- Orchestrates the entire debate flow
-- Generates context-aware prompts for each round
-- Manages debate phases (opening, development, rebuttal, closing)
 
-#### **ScoringEngine** (`lib/scoring-engine.ts`)
-- Analyzes arguments across multiple criteria
-- Calculates real-time scores and determines winners
-- Provides detailed feedback on argument quality
+## ⚙️ Installation & Setup
 
-#### **Dynamic Model Loading** (`hooks/use-models.ts`)
-- Fetches latest models from OpenRouter API
-- Categorizes models by pricing tier
-- Provides fallback models if API fails
+### 1️⃣ Clone the Repository
 
-### Model Configuration
-Models are dynamically loaded from OpenRouter API and automatically categorized:
-- **Free Tier**: No cost or very low cost models
-- **Standard Tier**: Mid-range pricing models  
-- **Premium Tier**: High-performance, higher-cost models
+git clone https://github.com/meghajoshi9012/DebateMate.git
+cd DebateMate
+2️⃣ Install Dependencies
 
-## Use Cases
+npm install
+3️⃣ Run the Development Server
 
-### **Education**
-- Classroom debates on historical topics
-- Philosophy and ethics discussions
-- Literature analysis and interpretation
+npm run dev
+Open your browser and visit:
 
-### **Business**
-- Product decision making
-- Strategy discussions
-- Market analysis debates
+http://localhost:3000
+🧪 Production Build
 
-### **Research**
-- AI model comparison and evaluation
-- Argument quality assessment
-- Debate methodology research
+npm run build
+npm start
+🎯 Use Cases
+Debate and group discussion practice
 
-### **Entertainment**
-- Fun debates on pop culture topics
-- Creative writing prompts
-- AI personality exploration
+Interview preparation
 
-## Contributing
+Competitive exam readiness (UPSC, SSC, etc.)
 
-### Development Workflow
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Add tests if applicable
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
+Public speaking improvement
 
-### Code Standards
-- TypeScript for all new code
-- ESLint + Prettier for formatting
-- Component-driven architecture
-- Comprehensive error handling
+Logical and analytical thinking development
 
-## Performance
+Human vs AI argument comparison
 
-- **First Load**: < 2s on 3G networks
-- **Debate Generation**: 2-5s per argument
-- **Real-time Scoring**: < 100ms analysis
+🔮 Future Enhancements
+User authentication and profiles
 
-## Security & Privacy
+Debate history tracking
 
-- **API Keys**: Stored locally in browser, never sent to our servers
-- **Data Privacy**: No debate data is stored permanently
-- **Rate Limiting**: Built-in protection against API abuse
-- **Error Handling**: Secure error messages without sensitive data exposure
+Voice-based debate interaction
 
-### Manual Deployment
-```bash
-pnpm build
-pnpm start
-```
-=======
-# DebateMate
->>>>>>> 11a9de4fc0096d4356a0559538d8eb6436a59879
+Multiplayer human vs human debates
+
+Scoring and feedback system
+
