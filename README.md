@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #debatemate
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
@@ -203,3 +204,6 @@ Models are dynamically loaded from OpenRouter API and automatically categorized:
 pnpm build
 pnpm start
 ```
+=======
+# DebateMate
+>>>>>>> 11a9de4fc0096d4356a0559538d8eb6436a59879
